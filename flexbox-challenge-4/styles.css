@@ -44,3 +44,22 @@ header {
   font-family: "Playfair Display", serif;
   font-weight: 900;
 }
+
+.section-one {
+  margin: 5rem 0;
+}
+
+.section-one h1 {
+  text-align: center;
+}
+.section-one__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+}
+
+.section-one__content .one,
+.section-one__content .two {
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+}
