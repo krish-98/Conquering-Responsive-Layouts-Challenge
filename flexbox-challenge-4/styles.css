@@ -121,3 +121,7 @@ header {
   font-family: "Roboto", sans-serif;
   align-self: flex-start;
 }
+
+img {
+  max-width: 100%;
+}
