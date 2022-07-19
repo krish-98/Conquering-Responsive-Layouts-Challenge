@@ -51,6 +51,8 @@ header {
 
 .section-one h1 {
   text-align: center;
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
 }
 .section-one__content {
   display: flex;
@@ -62,4 +64,60 @@ header {
 .section-one__content .two {
   width: 45%;
   font-family: "Roboto", sans-serif;
+}
+
+.section-two {
+  background-color: var(--dark-black);
+}
+
+.section-two__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.section-two__content .one {
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+  align-self: flex-start;
+}
+
+.section-two__content h1 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+.section-two__content .two {
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-three {
+  background-color: var(--secondary-color);
+}
+
+.section-three__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.section-three__content .one {
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-three__content h1 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+.section-three__content .two {
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+  align-self: flex-start;
 }
