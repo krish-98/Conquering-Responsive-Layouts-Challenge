@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { ImCross } from "react-icons/im"
+import Image from "./the-image.jpg"
 
 function App() {
   const [toggle, setToggle] = useState(false)
@@ -89,7 +90,7 @@ function App() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <button className="text-white text-base bg-gold px-8 py-2 rounded-full uppercase hover:opacity-90">
+                <button className="text-white text-base font-bold bg-gold px-8 py-2 rounded-full uppercase hover:opacity-90">
                   I want to learn
                 </button>
               </div>
@@ -100,40 +101,48 @@ function App() {
 
       <main>
         <section>
-          <div>
-            <div>
-              <h2>Mobile-first</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </p>
-            </div>
+          <div className="max-w-[1200px] mx-auto">
+            <div className="flex flex-col gap-12 text-center px-8 py-14 lg:flex-row">
+              <div>
+                <h2 className="text-gold text-2xl font-bold mb-4">
+                  Mobile-first
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam
+                </p>
+              </div>
 
-            <div>
-              <h2>Efficient</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </p>
-            </div>
+              <div>
+                <h2 className="text-gold text-2xl font-bold mb-4">Efficient</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam
+                </p>
+              </div>
 
-            <div>
-              <h2>Done right</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </p>
+              <div>
+                <h2 className="text-gold text-2xl font-bold mb-4">
+                  Done right
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section>
-          <div>
-            <div>
-              <h1>It doesn't have to be so hard</h1>
+        <section className="max-w-[1200px] mx-auto">
+          <div className="px-8 py-14 lg:flex lg:justify-between ">
+            <div className="flex flex-col gap-8 lg:w-[60%]">
+              <h1 className="text-2xl font-bold text-gold">
+                It doesn't have to be so hard
+              </h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -142,7 +151,7 @@ function App() {
                 dolore magna aliqua. Ut enim ad minim veniam.
               </p>
 
-              <img src={Image} alt="" />
+              <img src={Image} alt="a sketched image" />
 
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -153,26 +162,25 @@ function App() {
               </p>
             </div>
 
-            <div>
-              <div>
-                <h1>Break it down</h1>
+            <div className="text-center mt-12 flex flex-col gap-8 lg:w-[30%] lg:mt-0">
+              <div className="text-white bg-darkLight py-14 px-6 ">
+                <h1 className="font-bold text-2xl pb-6">Break it down</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
 
-              <div>
-                <h1>Work your way up</h1>
+              <div className="text-white bg-darkLight py-14 px-6">
+                <h1 className="font-bold text-2xl pb-6">Work your way up</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
 
-              <div>
-                {/* <h1></h1> */}
-                <p>
+              <div className="text-white bg-darkLight py-14 px-6">
+                <p className="pt-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -182,41 +190,47 @@ function App() {
         </section>
       </main>
 
-      <footer>
-        <div>
-          <div>
-            <h2>just scratching the surface</h2>
+      <footer className="bg-darkLight">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-white text-center px-8 py-14">
+            <h2 className="text-4xl font-bold mb-6">
+              Just scratching the surface
+            </h2>
 
-            <div>
-              <h3>About our company</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
+            <div className="lg:flex lg:justify-between">
+              <div className="my-8 lg:w-[40%]">
+                <h3 className="text-gold text-2xl mb-6">About our company</h3>
+                <p className="font-extralight ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
 
-            <div>
-              <h3>Getting around</h3>
-              <p>Home</p>
-              <p>About</p>
-              <p>Contact</p>
-            </div>
+              <div className="sm:flex sm:justify-center gap-8 lg:text-left lg:w-[50%]">
+                <div className="my-8">
+                  <h3 className="text-gold text-2xl mb-4">Getting around</h3>
+                  <p className="my-3 font-extralight">Home</p>
+                  <p className="my-3 font-extralight">About</p>
+                  <p className="my-3 font-extralight">Contact</p>
+                </div>
 
-            <div>
-              <h3>Other things</h3>
-              <p>Lorem ipsum</p>
-              <p>dolor</p>
-              <p>sit amet</p>
-              <p>consectetur</p>
-            </div>
+                <div className="my-8">
+                  <h3 className="text-gold text-2xl mb-4">Other things</h3>
+                  <p className="my-3 font-extralight">Lorem ipsum</p>
+                  <p className="my-3 font-extralight">dolor</p>
+                  <p className="my-3 font-extralight">sit amet</p>
+                  <p className="my-3 font-extralight">consectetur</p>
+                </div>
 
-            <div>
-              <h3>And more</h3>
-              <p>Lorem ipsum</p>
-              <p>dolor</p>
-              <p>sit amet</p>
-              <p>consectetur</p>
+                <div className="my-8">
+                  <h3 className="text-gold text-2xl mb-4">And more</h3>
+                  <p className="my-3 font-extralight">Lorem ipsum</p>
+                  <p className="my-3 font-extralight">dolor</p>
+                  <p className="my-3 font-extralight">sit amet</p>
+                  <p className="my-3 font-extralight">consectetur</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
